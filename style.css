@@ -1,0 +1,102 @@
+html{
+    box-sizing:border-box;
+    height:100%;
+}
+
+*,
+&::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    
+}
+
+body{
+    align-items:center;
+    background:linear-gradient(320deg,#016A70,#D2DE32,#FFFFDD,#016A70);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:flex;
+    font-display: optional;
+    height:inherit;
+    justify-content:center;
+}
+
+.wrapper{
+    backdrop-filter:blur(5.5px);
+    border-radius:16px;
+    box-shadow:0 4px 30px rgba(35, 35, 35, 0.1);
+    color:#040D12;
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.30);
+    border:1px solid rgba(255,255,255,0.34);
+    flex-basis:400px;
+    height:540px;
+    padding:20px 35px;
+}
+
+.screen{
+    backdrop-filter:blur(5.5px);
+    background:rgba(255,255,255,0.75);
+    border:1px solid rgba(255,255,255,0.01);
+    border-radius:16px;
+    box-shadow:0 4px 30px rgba(35,35,35,0.1);
+    color:#3F1D38;
+    font-size:50px;
+    overflow:auto;
+    padding:20px;
+    text-align: right;
+    width:326px;
+}
+
+.calc-button-row{
+    display:flex;
+    justify-content:space-between;
+    margin:5% 0;
+}
+
+.calc-button{
+    backdrop-filter:blur(5.5px);
+    background:rgba(255,255,255,0.75);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:30px;
+    box-shadow:0 4px 30px rgba(35,35,35,0.1);
+    color:#35155D;
+    flex-basis: 20%;
+    font-family:24px;
+    height: 65px;
+    font-size:30px;
+}
+
+.calc-button:last-child{
+    backdrop-filter:blur(5.5px);
+    background:rgba(255,255,255,0.25);
+    border:1px solid rgba(255,255,255,0.01);
+    border-radius:16px;
+    box-shadow:0 4px 30px rgb(249, 226, 226);
+    color:rgb(0, 0, 0);
+    background:#D5FFE4;
+}
+
+.calc-button:last-child:hover{
+    background-color:inherit;
+    color:inherit;
+}
+
+.calc-button:hover{
+    background-color: inherit;
+}
+
+.calc-button:active{
+    background-color:#D2DE32;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis:72%;
+}
+
